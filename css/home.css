@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "SFProDisplay-Bold";
+  src: url("../../assets/fonts/FontsFree-Net-SFProDisplay-Bold.ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "FProDisplay-Semibold";
+  src: url("../../assets/fonts/FontsFree-Net-SFProDisplay-Semibold.ttf");
+  font-style: normal;
+  font-weight: 600;
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.header .header__info {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: #008dcc;
+  padding: 8px 360px;
+}
+.header .header__info .info_blocks-one,
+.header .header__info .info_blocks-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.info_blocks-two .lang,
+.info_blocks-two .social-btns,
+.info_blocks-two .schedule {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.info_blocks-two .lang {
+  display: flex;
+  gap: 5px;
+  color: white;
+}
+.info_blocks-two .lang p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #33a4d6;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+.info_blocks-two .social-btns {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.info_blocks-two .social-btns div {
+  background-color: #33a4d6;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info_blocks-two .schedule {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__main-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 360px;
+}
+.header__main-block .menu__list {
+  display: flex;
+  gap: 45px;
+}
+.header__main-block .order-call {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.header__main-block .order-call .order-number {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: "SFProDisplay-Bold";
+}
+.header__main-block .order-call .order-btn {
+  background-color: #008dcc;
+  color: white;
+  padding: 11px 30px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-family: "FProDisplay-Semibold";
+}
+
+.header__slider {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding: 0px 360px;
+  height: 546px;
+  background-color: #e5f7f5;
+}
+.header__slider .slider__info .slider-title {
+  line-height: 45px;
+  font-size: 40px;
+  font-family: "FProDisplay-Semibold";
+  margin-bottom: 20px;
+}
+.header__slider .slider__info .slider-title p {
+  color: #008dcc;
+}
+.header__slider .slider__info .slider-text {
+  font-size: 15px;
+  font-family: "FProDisplay-Semibold";
+  line-height: 20px;
+  color: #303639;
+  margin-bottom: 50px;
+}
+.header__slider .slider__info .submit__application-btn {
+  background-color: #008dcc;
+  color: white;
+  border-radius: 5px;
+  padding: 17px 28px;
+  font-size: 15px;
+  font-family: "FProDisplay-Semibold";
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header__slider .slider__info .submit__application-btn::after {
+  content: url("../../assets/icons/arrow-right-icon.png");
+  position: relative;
+  top: 2px;
+}
+.header__slider .slider__img {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 50%;
+  height: 646px;
+  background-image: url("../../assets/images/header_background.png");
+}
+
+.content {
+  padding: 0px 360px;
+}
+.content .cards__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 65px 0px 90px 0px;
+}
+.content .cards__list .card__item {
+  position: relative;
+  width: 582px;
+  height: 300px;
+  padding: 30px;
+  overflow: hidden;
+  background-color: #008dcc;
+  display: flex;
+}
+.content .cards__list .card__item .card__item-title {
+  font-size: 23px;
+  color: white;
+  font-family: "FProDisplay-Semibold";
+  margin-bottom: 30px;
+}
+.content .cards__list .card__item .get-catalog__btn {
+  padding: 8px 10px;
+  background-color: white;
+  color: #008dcc;
+  font-family: "FProDisplay-Semibold";
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+}
+.content .cards__list .card__item .get-catalog__btn::after {
+  content: url("../../assets/icons/arrow-right-icon.svg");
+}
+.content .cards__list .card__item .card__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+.content .cards__list .card__item .card__image .ellipse {
+  position: absolute;
+  bottom: 30px;
+  left: 60px;
+  z-index: 1;
+  background-color: #e5f7f5;
+  width: 375px;
+  height: 375px;
+  border-radius: 50%;
+}
+.content .cards__list .card__item .card__image .img {
+  position: relative;
+  z-index: 1;
+}
