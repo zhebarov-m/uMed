@@ -16,6 +16,8 @@
 
     color: white;
     background-color: #008dcc;
+    font-family: "FProDisplay-Regular";
+    font-size: 13px;
     padding: 8px 360px;
     .info_blocks-one,
     .info_blocks-two {
@@ -26,6 +28,15 @@
     }
   }
 }
+
+.info_blocks-one {
+  .block_1,
+  .block_2 {
+    display: flex;
+    gap: 10px;
+  }
+}
+
 .info_blocks-two {
   .lang,
   .social-btns,
@@ -85,6 +96,16 @@
   .menu__list {
     display: flex;
     gap: 45px;
+
+    font-family: "FProDisplay-Medium";
+    cursor: pointer;
+    font-size: 15px;
+    color: #575a5b;
+
+    .list-item:hover {
+      font-family: "FProDisplay-Medium";
+      color: #008dcc;
+    }
   }
 
   .order-call {
@@ -280,7 +301,7 @@
         padding: 8px 10px;
         background-color: white;
         color: #008dcc;
-        font-family: "FProDisplay-Semibold";
+        font-family: "SFProDisplay-Bold";
         border-radius: 10px;
         width: 175px;
 
@@ -366,7 +387,7 @@
         }
 
         .title {
-          font-size: 14px;
+          font-size: 13px;
           text-transform: uppercase;
           margin-top: 35px;
           font-family: "SFProDisplay-Bold";
@@ -376,11 +397,28 @@
         .advantage-text {
           font-size: 14px;
           margin-top: 20px;
-
+          font-family: "FProDisplay-Regular";
           line-height: 20px;
         }
       }
     }
+  }
+}
+
+.about-company {
+  position: relative;
+  z-index: 1;
+  background-color: #f3f9fb;
+  margin-top: 95px;
+
+  .blue-back {
+    position: absolute;
+    top: 0;
+
+    background-color: #008dcc;
+    width: 42%;
+    height: 100%;
+    z-index: -1;
   }
 }
 
@@ -390,32 +428,90 @@
   align-items: end;
   gap: 64px;
 
+  .nurse__block-image {
+    position: relative;
+    z-index: 2;
+  }
+
   .info-companies {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
+    padding: 100px 0px;
     height: 792px;
     .title {
-      font-size: 40px;
-      font-weight: 800;
-
+      font-size: 38px;
+      font-family: "FProDisplay-Heavy";
+      font-style: italic;
       p {
         text-align: center;
-        font-size: 24px;
+        font-size: 23px;
+        margin-top: 15px;
         font-weight: 500;
         background-color: #f16d03;
         color: white;
-        width: 440px;
-        padding: 5px 0px;
+        width: 460px;
+        font-style: normal;
+        padding: 5px;
+        font-family: "FProDisplay-Medium";
       }
     }
 
     .text__company-info {
-      line-height: 22px;
+      line-height: 25px;
       font-size: 15px;
       margin-top: 40px;
+      margin-bottom: 20px;
+      font-family: "FProDisplay-Regular";
+      color: #535657;
+    }
+    .paragraph {
+      font-family: "FProDisplay-Regular";
+      font-size: 15px;
+      color: #535657;
+      line-height: 25px;
+    }
+
+    .quote-slogan {
+      margin-top: 40px;
+
+      display: flex;
+      align-items: start;
+      gap: 18px;
+      line-height: 25px;
+      font-family: "FProDisplay-Semibold";
+      font-size: 17px;
+      color: #526066;
+    }
+
+    .btns {
+      margin-top: 46px;
+
+      button {
+        width: 235px;
+        height: 51px;
+        border-radius: 5px;
+        font-size: 15px;
+        padding: 15px;
+        font-family: "FProDisplay-Medium";
+        text-align: left;
+
+        &:hover {
+          background-color: #008dcc;
+          color: #fff;
+        }
+      }
+      .more__btn {
+        border: 2px solid #008dcc;
+        background-color: transparent;
+        margin-right: 12px;
+        color: #008dcc;
+      }
+
+      .choose-equipment__btn {
+        background-color: #008dcc;
+        color: #fff;
+      }
     }
   }
 }
