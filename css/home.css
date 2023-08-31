@@ -109,7 +109,7 @@
   position: relative;
   padding: 0px 360px;
   height: 546px;
-  background-color: #e5f7f5;
+  background-color: #e3f1f7;
 }
 .header__slider .slider__info .slider-title {
   line-height: 45px;
@@ -152,13 +152,11 @@
   background-image: url("../../assets/images/header_background.png");
 }
 
-.content {
-  padding: 0px 360px;
-}
 .content .cards__list {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  padding: 0px 360px;
   margin: 65px 0px 90px 0px;
 }
 .content .cards__list .card__item {
@@ -169,6 +167,61 @@
   overflow: hidden;
   background-color: #008dcc;
   display: flex;
+}
+.content .cards__list .card__item:nth-child(2) {
+  background-color: #f3f9fc;
+}
+.content .cards__list .card__item:nth-child(2) .card__item-title {
+  color: #303639;
+}
+.content .cards__list .card__item:nth-child(2) .get-catalog__btn {
+  background-color: #008dcc;
+  color: white;
+  width: 175px;
+}
+.content .cards__list .card__item:nth-child(2) .get-catalog__btn::after {
+  content: url("../../assets/icons/arrow-right-icon.svg");
+  color: white;
+}
+.content .cards__list .card__item:nth-child(2) #card2 .ellipse {
+  background-color: #008dcc;
+  position: absolute;
+  bottom: 40px;
+  right: -30px;
+  z-index: 1;
+}
+.content .cards__list .card__item:nth-child(2) #card2 .img {
+  position: relative;
+  right: -20px;
+  z-index: 1;
+}
+.content .cards__list .card__item:nth-child(3) {
+  background-color: #f3f9fc;
+}
+.content .cards__list .card__item:nth-child(3) .card__item-title {
+  color: #303639;
+}
+.content .cards__list .card__item:nth-child(3) .get-catalog__btn {
+  background-color: #008dcc;
+  color: white;
+  width: 175px;
+}
+.content .cards__list .card__item:nth-child(3) .get-catalog__btn::after {
+  content: url("../../assets/icons/arrow-right-icon.svg");
+  color: white;
+}
+.content .cards__list .card__item:nth-child(3) #card3 .ellipse {
+  background-color: #008dcc;
+  position: absolute;
+  bottom: -160px;
+  right: 25px;
+  z-index: 1;
+}
+.content .cards__list .card__item:nth-child(3) #card3 .img {
+  position: relative;
+  right: 75px;
+  bottom: -90px;
+  z-index: 1;
 }
 .content .cards__list .card__item .card__item-title {
   font-size: 23px;
@@ -182,19 +235,20 @@
   color: #008dcc;
   font-family: "FProDisplay-Semibold";
   border-radius: 10px;
+  width: 175px;
   display: flex;
   gap: 10px;
 }
 .content .cards__list .card__item .get-catalog__btn::after {
-  content: url("../../assets/icons/arrow-right-icon.svg");
+  content: url("../../assets/icons/arrow-right-icon(blue).svg");
 }
-.content .cards__list .card__item .card__image {
+.content .cards__list .card__item #card1 {
   position: absolute;
   top: 0;
   right: 0;
   overflow: hidden;
 }
-.content .cards__list .card__item .card__image .ellipse {
+.content .cards__list .card__item #card1 .ellipse {
   position: absolute;
   bottom: 30px;
   left: 60px;
@@ -204,7 +258,109 @@
   height: 375px;
   border-radius: 50%;
 }
-.content .cards__list .card__item .card__image .img {
+.content .cards__list .card__item #card1 .img {
   position: relative;
   z-index: 1;
+}
+.content .cards__list .card__item #card2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.content .cards__list .card__item #card2 .ellipse {
+  width: 375px;
+  height: 375px;
+  border-radius: 50%;
+}
+.content .cards__list .card__item #card3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.content .cards__list .card__item #card3 .ellipse {
+  width: 375px;
+  height: 375px;
+  border-radius: 50%;
+}
+.content .advantages {
+  padding: 0px 360px;
+  background-image: url("../../assets/images/advantange-back.png");
+  display: flex;
+  align-items: center;
+}
+.content .advantages .advantages__list {
+  display: flex;
+}
+.content .advantages .advantages__list .advantage__item {
+  text-align: center;
+  border-left: 1px solid rgba(51, 164, 214, 0.5019607843);
+  color: white;
+  padding: 50px 0px 70px 0px;
+}
+.content .advantages .advantages__list .advantage__item:first-child {
+  border: none;
+}
+.content .advantages .advantages__list .advantage__item .title {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 35px;
+  font-family: "SFProDisplay-Bold";
+  line-height: 25px;
+}
+.content .advantages .advantages__list .advantage__item .advantage-text {
+  font-size: 14px;
+  margin-top: 20px;
+  line-height: 20px;
+}
+
+.container__company-section {
+  padding: 0px 360px;
+  display: flex;
+  align-items: end;
+  gap: 64px;
+}
+.container__company-section .info-companies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 792px;
+}
+.container__company-section .info-companies .title {
+  font-size: 40px;
+  font-weight: 800;
+}
+.container__company-section .info-companies .title p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  background-color: #f16d03;
+  color: white;
+  width: 440px;
+  padding: 5px 0px;
+}
+.container__company-section .info-companies .text__company-info {
+  line-height: 22px;
+  font-size: 15px;
+  margin-top: 40px;
+}
+
+.groups-companies__slider {
+  padding: 65px 360px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 77px;
+  background-color: #008dcc;
+}
+.groups-companies__slider .companies {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  height: 342px;
+  background-color: #151b1e;
 }
