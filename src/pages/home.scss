@@ -59,6 +59,10 @@
       width: 25px;
       height: 25px;
       border-radius: 5px;
+
+      &:last-child {
+        background-color: transparent;
+      }
     }
   }
 
@@ -193,6 +197,35 @@
     width: 50%;
     height: 646px;
     background-image: url("../../assets/images/header_background.png");
+
+  }
+  .add-btn {
+    position: relative;
+    border: 1px solid #f16d03;
+    width: 93px;
+    height: 93px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 10px #f3f4f545;
+      
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
+    .eclipse {
+      position: absolute;
+      background-color: #f16d03;
+      width: 53px;
+      height: 53px;
+      border-radius: 50%;
+      box-shadow: 0px 0px 0px 10px #f3f4f545;
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      font-style: italic;
+      color: white;
+    }
   }
 }
 
@@ -285,8 +318,45 @@
             z-index: 1;
           }
         }
+
       }
 
+      &:nth-child(4) {
+        background-color: #008dcc;
+
+        .card__item-title {
+          color: white;
+        }
+
+        .get-catalog__btn {
+          background-color: white;
+          color: #008dcc;
+          width: 175px;
+
+          &::after {
+            content: url("../../assets/icons/arrow-right-icon(blue).svg");
+            color: white;
+          }
+        }
+
+        #card4 {
+          .ellipse {
+            background-color: white;
+
+            position: absolute;
+            top: 70px;
+            right: -60px;
+            z-index: 1;
+          }
+
+          .img {
+            position: relative;
+            bottom: 70px;
+            right: -90px;
+            z-index: 1;
+          }
+        }
+      }
       display: flex;
 
       .card__item-title {
@@ -354,6 +424,16 @@
         position: absolute;
         bottom: 0;
         right: 0;
+
+        .ellipse {
+          width: 375px;
+          height: 375px;
+          border-radius: 50%;
+        }
+      }
+
+      #card4 {
+
 
         .ellipse {
           width: 375px;
@@ -497,20 +577,34 @@
         text-align: left;
 
         &:hover {
-          background-color: #008dcc;
-          color: #fff;
+          position: relative;
+          top: 1px;
         }
       }
       .more__btn {
+        position: relative;
         border: 2px solid #008dcc;
         background-color: transparent;
         margin-right: 12px;
         color: #008dcc;
+
+        &::after {
+          content: url("../../assets/icons/more-arrow.png");
+          position: absolute;
+          right: 10px;
+        }
       }
 
       .choose-equipment__btn {
+        position: relative;
         background-color: #008dcc;
         color: #fff;
+
+        &::after {
+          content: url("../../assets/icons/equipment-arrow.png");
+          position: absolute;
+          right: 10px;
+        }
       }
     }
   }
@@ -533,7 +627,263 @@
   }
 }
 
+.partnership {
+  display: flex;
+
+  padding: 115px 360px 85px 360px;
+  background-color: #f3f9fb;
+
+  .partnership__info {
+    .info-title {
+      font-family: "SFProDisplay-Bold";
+      font-size: 40px;
+      padding-right: 20px;
+    }
+
+    .info-text {
+      padding: 50px 0px 40px 0px;
+
+      .umed__discription {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        font-family: "FProDisplay-Regular";
+        font-size: 15px;
+        line-height: 25px;
+        border-left: 5px solid #008dcc;
+        color: #535657;
+        padding-left: 22px;
+      }
+    }
+
+    .give-health__paragraph {
+      font-family: "SFProDisplay-Bold";
+      font-size: 19px;
+      line-height: 25px;
+      padding-right: 90px;
+      color: #535657;
+
+      span {
+        color: #008dcc;
+      }
+    }
+  }
+}
+
+.partnership__image {
+  .image-container {
+    background-image: url("../../assets/images/partnership-image.png");
+    width: 527px;
+    height: 605px;
+    background-position-x: right;
+    background-position: center;
+    background-position: 610px 605px;
+    box-shadow: 30px -30px 00px #008dcc;
+  }
+}
+
+.news-section {
+  background-color: #f3f9fb;
+  padding-bottom: 110px !important;
+  .title {
+    font-size: 30px;
+    font-family: "SFProDisplay-Bold";
+  }
+  .line-for-title {
+    border: 1px solid #dde2e4;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-bottom: 40px;
+  }
+  padding: 0px 360px;
+  .news__cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    .card__item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      width: 380px;
+      object-fit: cover;
+
+      time {
+        font-size: 11px;
+        color: #878787;
+        font-family: "FProDisplay-Regular";
+      }
+
+      .discription {
+        font-size: 17px;
+        line-height: 25px;
+        font-family: "SFProDisplay-Bold";
+      }
+    }
+  }
+}
+
 .footer {
-  height: 342px;
   background-color: #151b1e;
+
+  padding: 40px 360px 30px 360px;
+  .footer__info {
+    display: flex;
+    gap: 70px;
+    width: 100%;
+
+    color: #fff;
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .social-btns {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        div {
+          background-color: #2d3235;
+          width: 30px;
+          height: 30px;
+          border-radius: 5px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+
+    .footer-navigation {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+
+        gap: 64px;
+
+        .head__catalog {
+          font-size: 17px;
+          font-family: "SFProDisplay-Bold";
+        }
+
+        .catalog__list {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          font-size: 14px;
+          font-family: "FProDisplay-Regular";
+          color: #8a9499;
+        }
+
+        .head__company {
+          font-size: 17px;
+          font-family: "SFProDisplay-Bold";
+        }
+
+        .company__list {
+          display: flex;
+
+          gap: 20px;
+
+          font-size: 14px;
+          font-family: "FProDisplay-Regular";
+          color: #8a9499;
+
+          div {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          }
+        }
+
+        .head__contacts {
+          font-size: 17px;
+          font-family: "SFProDisplay-Bold";
+        }
+
+        .contacts__list {
+          display: flex;
+          gap: 40px;
+          div {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            font-size: 14px;
+            font-family: "FProDisplay-Regular";
+            color: #8a9499;
+
+            .list-item {
+              &:first-child {
+                font-size: 25px;
+                color: #fff;
+              }
+
+              &:nth-child(2) {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                width: 250px;
+              }
+
+              &:last-child {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+              }
+            }
+          }
+          .nav-btns {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            button {
+              padding: 12px 40px;
+              font-size: 15px;
+              font-family: "FProDisplay-Regular";
+              border-radius: 5px;
+              color: white;
+              
+              &:nth-child(odd) {
+                background-color: #008dcc;
+                font-weight: 600;
+              }
+
+              &:nth-child(even) {
+                background-color: transparent;
+                border: 2px solid #008dcc;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    margin-top: 50px;
+
+    .line{
+      border: 1px solid #2d3235;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #585f62;
+      font-family: "FProDisplay-Regular";
+      font-size: 13px;
+    }
+  }
 }

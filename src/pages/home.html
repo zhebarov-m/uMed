@@ -93,11 +93,15 @@
               </p>
               <button class="submit__application-btn">Оставить заявку</button>
             </div>
-            <div class="slider__img"></div>
+            <div class="slider__img">
+            </div>
+            <div class="add-btn">
+              <div class="eclipse">+</div>
+            </div>
           </div>
         </header>
         <main class="content">
-          <aside class="cards-section">
+          <section class="cards-section">
             <ul class="cards__list">
               <li class="card__item" id="card__item-one">
                 <div class="card__info">
@@ -145,10 +149,10 @@
               </li>
               <li class="card__item" id="card__item-four">
                 <div class="card__info">
-                  <h2 class="card__item-title">Эндопротизирование</h2>
+                  <h2 class="card__item-title">Комплексные поставки</h2>
                   <button class="get-catalog__btn">Получить каталог</button>
                 </div>
-                <div class="card__image">
+                <div class="card__image" id="card4">
                   <div class="ellipse"></div>
                   <img
                     class="img"
@@ -158,8 +162,8 @@
                 </div>
               </li>
             </ul>
-          </aside>
-          <aside class="advantages">
+          </section>
+          <section class="advantages">
             <ul class="advantages__list">
               <li class="advantage__item">
                 <img
@@ -217,8 +221,8 @@
                 </p>
               </li>
             </ul>
-          </aside>
-          <aside class="about-company">
+          </section>
+          <section class="about-company">
             <div class="blue-back"></div>
             <div class="container__company-section">
               <div class="nurse__block-image">
@@ -233,18 +237,20 @@
                   Группа компаний «ЮМед»
                   <p>Российская торгово-сервисная компания</p>
                 </h2>
-                <p class="text__company-info">
-                  Основная специализация компании – обеспечение клиник
-                  современной медицинской продукцией в сфере травматологии и
-                  ортопедии. «ЮМед» работает в системе здравоохранения России с
-                  2012 года и оказывает полный комплекс услуг по поставкам
-                  медицинских изделий в направлениях: эндопротезирование,
-                  эндоскопическая хирургия, травматология, нейрохирургия.
-                  <p class="paragraph">
-                    Деятельность ГК «ЮМед» завоевала доверие специалистов в более
-                    1500 лечебных учреждениях.
+                <div class="text__company-info">
+                  <p>
+                    Основная специализация компании – обеспечение клиник
+                    современной медицинской продукцией в сфере травматологии и
+                    ортопедии. «ЮМед» работает в системе здравоохранения России
+                    с 2012 года и оказывает полный комплекс услуг по поставкам
+                    медицинских изделий в направлениях: эндопротезирование,
+                    эндоскопическая хирургия, травматология, нейрохирургия.
                   </p>
-                </p>
+                  <p class="paragraph">
+                    Деятельность ГК «ЮМед» завоевала доверие специалистов в
+                    более 1500 лечебных учреждениях.
+                  </p>
+                </div>
                 <blockquote class="quote-slogan">
                   <img src="../../assets/icons/quote.png" alt="quote icon" />
                   <span
@@ -299,28 +305,95 @@
                 class="next"
               />
             </div>
-          </aside>
+          </section>
+          <section class="partnership">
+            <div class="partnership__info">
+              <h2 class="info-title">
+                Партнёрство профессионалов во благо здоровья
+              </h2>
+              <div class="info-text">
+                <div class="umed__discription">
+                  <p class="paragraph-1">
+                    На территории России, «ЮМед» является официальным
+                    дистрибьютором таких всемирно известных компаний, как
+                    Smith&Nephew и Johnson & Johnson. Компания сотрудничает и с
+                    другими признанными зарубежными и российскими
+                    производителями. На сегодняшний день в списке поставщиков
+                    более 60 авторитетных брендов.
+                  </p>
+                  <p class="paragraph-2">
+                    Компания сопровождает своих Клиентов на всех этапах,
+                    проводит показательные операции для врачей, предоставляет
+                    возможность обучения на тренингах, берет на себя дальнейшее
+                    сервисное обслуживание.
+                  </p>
+                  <p class="paragraph-3">
+                    Группа компаний «ЮМед» занимает активную позицию в обмене
+                    опытом с коллегами, поэтому постоянно принимает участие в
+                    специализированных российских и иностранных выставках,
+                    тематических конференциях.
+                  </p>
+                </div>
+              </div>
+              <p class="give-health__paragraph">
+                <span>Дарить людям здоровье - </span> это жизненная позиция,
+                приоритет и призвание, которое прочно вплетено в судьбу каждого
+                сотрудника Группы компаний «ЮМед».
+              </p>
+            </div>
+            <div class="partnership__image">
+              <div class="image-container"></div>
+            </div>
+          </section>
+          <section class="news-section">
+            <h2 class="title">Новости</h2>
+            <hr class="line-for-title" />
+            <ul class="news__cards">
+              <li class="card__item">
+                <img
+                  src="../../assets/images/news-card-image1.png"
+                  alt="news card"
+                  class="news-card__image1"
+                />
+                <time datetime="12-11-2021">12.11.2021</time>
+                <div class="discription">
+                  Подводим итоги II межрегионального ТРАВМАФОРУМа в Челябинске
+                </div>
+              </li>
+              <li class="card__item">
+                <img
+                  src="../../assets/images/news-card-image2.png"
+                  alt="news card"
+                  class="news-card__image2"
+                />
+                <time datetime="12-11-2021">12.11.2021</time>
+                <div class="discription">
+                  В ФЦТОЭ состоялась ХII Межрегиональная конференция в
+                  Чебоксарах
+                </div>
+              </li>
+              <li class="card__item">
+                <img
+                  src="../../assets/images/news-card-image3.png"
+                  alt="news card"
+                  class="news-card__image3"
+                />
+                <time datetime="12-11-2021">12.11.2021</time>
+                <div class="discription">
+                  Итоги участия во 2-м съезде травматологов- ортопедов СКФО,
+                  Ессентуки
+                </div>
+              </li>
+            </ul>
+          </section>
         </main>
         <footer class="footer">
           <div class="footer__info">
-            <div class="info_blocks-one">
-              <div class="block_1">
-                <img src="../../assets/icons/place_icon.png" alt="" /><span
-                  >127486, г. Москва, Коровинское шоссе д. 10, стр. 2, офис
-                  40</span
-                >
-              </div>
-              <div class="block_2">
-                <img src="../../assets/icons/email-icon.png" alt="" /><span
-                  >e-mail: info@umed.ru</span
-                >
-              </div>
-            </div>
-            <div class="info_blocks-two">
-              <div class="lang">
-                <p>РУ</p>
-                <p>EN</p>
-              </div>
+            <div class="logo">
+              <img
+                src="../../assets/images/logo_uMed(white).png"
+                alt="logo uMed(white)"
+              />
               <div class="social-btns">
                 <div class="instagram">
                   <img
@@ -338,12 +411,70 @@
                   />
                 </div>
               </div>
-              <div class="schedule">
-                <img src="../../assets/icons/oCLock-icon.png" alt="" /><span
-                  >ПН-ПТ с 9:00 до 18:00, СБ-ВС выходные</span
-                >
-              </div>
             </div>
+            <nav class="footer-navigation">
+                <div class="item">
+                  <h2 class="head__catalog">Каталог</h2>
+                  <ul class="catalog__list">
+                    <li class="list-item">Эндопротизирование</li>
+                    <li class="list-item">Эндоскопическая хирургия</li>
+                    <li class="list-item">Травматология</li>
+                    <li class="list-item">Комплексные поставки</li>
+                  </ul>
+                </div>
+                <div class="item">
+                  <h2 class="head__company">Компания</h2>
+                  <ul id="companyId" class="company__list">
+                    <div>
+                      <li class="list-item">Продукция</li>
+                      <li class="list-item">О компании</li>
+                    </div>
+                    <div>
+                      <li class="list-item">Новости</li>
+                      <li class="list-item">Контакты</li>
+                    </div>
+                  </ul>
+                </div>
+                <div class="item">
+                  <h2 class="head__contacts">Контакты</h2>
+                  <ul class="contacts__list">
+                    <div>
+                      <li class="list-item">+7 (495) 784-06-17</li>
+                      <li class="list-item">
+                        <img
+                          src="../../assets/icons/place_icon(little).png"
+                          alt=""
+                        /><span
+                          >127486, г. Москва, Коровинское шоссе д. 10, стр. 2,
+                          офис 40</span
+                        >
+                      </li>
+                      <li class="list-item">
+                        <img
+                          src="../../assets/icons/email-icon(little).png"
+                          alt=""
+                        /><span>e-mail: info@umed.ru</span>
+                      </li>
+                    </div>
+                    <div class="nav-btns">
+                      <button class="order-call">Заказать звонок</button>
+                      <button class="write-us">Написать нам</button>
+                    </div>
+                  </ul>
+                </div>
+
+              <!-- <hr class="line-for-title">
+              <div class="nav-elmns">
+                <div class="elem"></div>
+                <div class="elem"></div>
+                <div class="elem"></div>
+              </div> -->
+            </nav>
+          </div>
+
+          <div class="copyright">
+            <hr class="line">
+            <p>ООО  © 2012-2022 "ЮМед"     Политика конфиденциальности</p>
           </div>
         </footer>
       </div>
